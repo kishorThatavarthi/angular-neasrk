@@ -8,9 +8,10 @@ import { HelloComponent } from './hello.component';
 import { EmployComponent } from './employ/employ.component';
 import { EmployDetailComponent } from './employ-detail/employ-detail.component';
 import { EmployService } from './employ.service';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, FormsModule,HttpClientModule ],
   declarations: [ AppComponent, HelloComponent,EmployComponent, EmployDetailComponent],
   bootstrap:    [ AppComponent ],
   providers: [EmployService]
